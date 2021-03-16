@@ -1,4 +1,4 @@
-# codechallenge-NodeJS-senior
+# codechallenge-NodeJS
 
 **CODE CHALLENGE**
 
