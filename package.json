@@ -1,0 +1,30 @@
+{
+  "name": "node-junior-ninja-talent",
+  "version": "1.0.0",
+  "description": "**CODE CHALLENGE**",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/ninjatalent-world/codes/JuanFranciscoSolanoPrez21690-66638918/Node-junior90238.git"
+  },
+  "author": "Juan Francisco Solano Pérez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/ninjatalent-world/codes/JuanFranciscoSolanoPrez21690-66638918/Node-junior90238/issues"
+  },
+  "homepage": "https://gitlab.com/ninjatalent-world/codes/JuanFranciscoSolanoPrez21690-66638918/Node-junior90238#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.2"
+  }
+}
