@@ -27,9 +27,21 @@ const createUser = async(req, res) => {
             })
         }
 
-        const user = new Users(body)
+        
+        const user = new Users({
+            name: body.name,
+            email: body.email,
+            birthDate: body.birthDate,
+            address: {
+                street: body.street,
+                state: body.state,
+                city: body.city,
+                country: body.country,
+                zip: body.zip
+            }
+        })
         const userData = await user.save()
-
+        
         if(!userData) {
             return res.status(405).json({
                 description: "Invalid input"
@@ -38,9 +50,7 @@ const createUser = async(req, res) => {
 
         return res.status(201).json({
             description: "CREATED",
-            schema: {
-                userData
-            }
+            schema: userData
         })
     } catch (error) {
         console.error(error)
@@ -53,7 +63,7 @@ const createUser = async(req, res) => {
 const getUsersById = async(req, res) => {
     try {
         const params = req.params.userId
-        const usersData = await Users.find({ _id: params })
+        const usersData = await Users.find({ id: params })
 
         if (!usersData) {
             return res.status(404).json({
