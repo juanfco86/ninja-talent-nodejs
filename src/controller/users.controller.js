@@ -19,15 +19,13 @@ const getUsers = async(req, res) => {
 const createUser = async(req, res) => {
     try {
         const body = req.body
-        console.log(body.user.email);
-        // const findEmail = await Users.user.find({ email: email })
-        // console.log(findEmail);
+        const findEmail = await Users.findOne({ email: body.email })
         
-        // if (findEmail) {
-        //     return res.status(405).json({
-        //         description: "Invalid input"
-        //     })
-        // }
+        if (findEmail !== null) {
+            return res.status(405).json({
+                description: "Invalid input email"
+            })
+        }
 
         const user = new Users(body)
         const userData = await user.save()
