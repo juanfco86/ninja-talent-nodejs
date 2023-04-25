@@ -63,7 +63,7 @@ const createUser = async(req, res) => {
 const getUsersById = async(req, res) => {
     try {
         const params = req.params.userId
-        const usersData = await Users.find({ id: params })
+        const usersData = await Users.find({ _id: params })
 
         if (!usersData) {
             return res.status(404).json({
