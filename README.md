@@ -33,4 +33,41 @@ Se debe entregar:
 
 
 
+# Ninja Talent Nodejs
+
+API que permite dar de alta, modificar, eliminar y consultar usuarios, siguiendo las especificaciones del archivo JSON Swagger.
+
+## Tecnologías Utilizadas
+
+- Node.js
+- Nodemon (dependencia de desarrollo)
+- Dotenv
+- Express
+- Mongoose
+- Swagger-jsdoc
+- Swagger-ui-express
+- Body-parser
+
+## Instrucciones de Instalación
+
+1. Clonar este repositorio: git clone https://github.com/juanfco86/ninja-talent-nodejs
+2. Instalar las dependencias: npm install
+3. Ejecutar el servidor: node index.js o npm start (para nodemon)
+
+## Endpoints API
+
+La API tiene los siguientes endpoints disponibles:
+- /users/createUsers: Crea un nuevo usuario.
+- /users/getusers: Obtiene todos los usuarios.
+- /users/getusersById/{id usuario}: Obtiene un usuario por su ID.
+- /users/updateUsersById/{id usuario}: Actualiza un usuario por su ID.
+- /users/deleteUsersById/{id usuario}: Elimina un usuario por su ID.
+- /api-docs
+
+## Autor
+
+Juan Francisco Solano Pérez
+
+
+
 
