@@ -1,0 +1,266 @@
+{
+	"info": {
+		"_postman_id": "1261ee1f-24fe-482e-a849-eda540b589c4",
+		"name": "Challenge Ninja Talent junior nodejs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25005969"
+	},
+	"item": [
+		{
+			"name": "getusers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/users/getusers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"getusers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUsers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "name",
+						"value": "pepeeHEAderr",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Ana Isabel",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ana123@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "birthDate",
+							"value": "1988-06-01",
+							"type": "text"
+						},
+						{
+							"key": "street",
+							"value": "calle alberto",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "Málaga",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Torremolinos",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "España",
+							"type": "text"
+						},
+						{
+							"key": "zip",
+							"value": "31020",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/users/createUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"createUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getusers usuario creado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/users/getusers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"getusers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUsersById",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "name",
+						"value": "pepeeHEAderr",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Anabel",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "anabel123@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "birthDate",
+							"value": "1988-06-11",
+							"type": "text"
+						},
+						{
+							"key": "address.street",
+							"value": "calle alberto",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address.state",
+							"value": "Cadiz",
+							"type": "text"
+						},
+						{
+							"key": "address.city",
+							"value": "Algeciras",
+							"type": "text"
+						},
+						{
+							"key": "address.country",
+							"value": "España",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address.zip",
+							"value": "22244",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/users/updateUsersById/6449737a42c7170ed5b68ac3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"updateUsersById",
+						"6449737a42c7170ed5b68ac3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getusersById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:4000/users/getusersById/6449737a42c7170ed5b68ac3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"getusersById",
+						"6449737a42c7170ed5b68ac3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUsersById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/users/deleteUsersById/6449737a42c7170ed5b68ac3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"deleteUsersById",
+						"6449737a42c7170ed5b68ac3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getusers usuario borrado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/users/getusers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"getusers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
